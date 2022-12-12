@@ -14,9 +14,15 @@ const links = [
 	{ id: 7, name: "donate", link: "donate" },
 ];
 
-const Navbar = ({ openSideDrawer }) => {
+const Navbar = ({ openSideDrawer, bg }) => {
 	return (
-		<nav className="absolute z-[1000] w-full h-14 bg-white md:bg-transparent text-black md:bg-gradient-to-b from-black/90 to-black/0 border-b border-gray-300 md:text-white">
+		<nav
+			className={`absolute z-[1000] w-full h-14 ${
+				bg == "/"
+					? "bg-transparent bg-gradient-to-b from-black/90 to-black/0 text-white"
+					: "bg-white text-black"
+			} border-b border-gray-300 transition-all duration-300`}
+		>
 			<div className="px-4 md:px-0 md:container h-full flex items-center justify-between">
 				<div>
 					<img src={Logo} className="h-12" alt="School Crest" />

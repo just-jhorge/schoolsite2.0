@@ -1,9 +1,9 @@
 import Marquee from "react-fast-marquee";
-import knust from "../../assets/images/knust.png";
-import moh from "../../assets/images/moh.png";
-import nab from "../../assets/images/nab.jpg";
-import nmc from "../../assets/images/nmc.jpg";
-import ucc from "../../assets/images/ucc.webp";
+import knust from "../../../assets/images/knust.png";
+import moh from "../../../assets/images/moh.png";
+import nab from "../../../assets/images/nab.jpg";
+import nmc from "../../../assets/images/nmc.jpg";
+import ucc from "../../../assets/images/ucc.webp";
 
 const Partners = () => {
 	return (

@@ -1,7 +1,7 @@
-import womanPlaceholder from "../../assets/images/placeholder-woman.jpg";
-import manPlaceholder from "../../assets/images/placeholder-man.jpg";
-import gannan from "../../assets/images/gertrude_n_annan.jpg";
-import theo from "../../assets/images/theophilus_azaanaang.jpg";
+import womanPlaceholder from "../../../assets/images/placeholder-woman.jpg";
+import manPlaceholder from "../../../assets/images/placeholder-man.jpg";
+import gannan from "../../../assets/images/gertrude_n_annan.jpg";
+import theo from "../../../assets/images/theophilus_azaanaang.jpg";
 
 const Management = () => {
 	return (

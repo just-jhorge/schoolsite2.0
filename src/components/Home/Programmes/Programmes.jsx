@@ -1,14 +1,14 @@
 import { GiNurseFemale } from "react-icons/gi";
-import Card from "../../utilities/Card";
+import Card from "../../../utilities/Card";
 
 const Programmes = () => {
 	return (
 		<div className="my-14 container flex w-full flex-col items-start justify-center sm:col-span-3">
-			<div>
+			<div className="text-center md:text-left">
 				<h3 className="mb-10 font-josefin text-2xl font-normal uppercase text-green-500 md:text-3xl">
 					<span className="text-black">Our</span> Programmes
 				</h3>
-				<div className="flex w-full flex-col items-center justify-between gap-8 md:flex-row">
+				<div className="flex w-full flex-col items-center justify-center md:justify-between gap-8 md:flex-row">
 					<Card
 						heading="RGN"
 						icon={<GiNurseFemale />}

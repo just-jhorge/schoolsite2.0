@@ -1,11 +1,11 @@
 import Carousel from "../components/Carousel/Carousel";
 import CarouselItem from "../components/Carousel/CarouselItem";
-import Management from "../components/Management/Management";
+import Management from "../components/Home/Management/Management";
 import HomeMarquee from "../components/Marquee/HomeMarquee";
-import Partners from "../components/Partners/Partners";
-import Programmes from "../components/Programmes/Programmes";
-import SchoolData from "../components/SchoolData/SchoolData";
-import Welcome from "../components/Welcome/Welcome";
+import Partners from "../components/Home/Partners/Partners";
+import Programmes from "../components/Home/Programmes/Programmes";
+import SchoolData from "../components/Home/SchoolData/SchoolData";
+import Welcome from "../components/Home/Welcome/Welcome";
 import { carouselItems } from "../data/data";
 
 const Home = () => {
