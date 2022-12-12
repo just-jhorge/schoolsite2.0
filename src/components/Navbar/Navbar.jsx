@@ -5,13 +5,69 @@ import NavItem from "./NavItem";
 import Logo from "../../assets/images/logo.png";
 
 const links = [
-	{ id: 1, name: "about", link: "about" },
-	{ id: 2, name: "admissions", link: "admissions" },
-	{ id: 3, name: "academics", link: "academics" },
-	{ id: 4, name: "student life", link: "student-life" },
-	{ id: 5, name: "media", link: "media" },
-	{ id: 6, name: "useful links", link: "useful-links" },
-	{ id: 7, name: "donate", link: "donate" },
+	{
+		id: 1,
+		name: "about",
+		link: "about",
+		dropdown: [
+			{ id: 1, name: "history and facts", link: "history-and-facts" },
+			{ id: 2, name: "goals and objectives", link: "goals-and-objectives" },
+			{ id: 3, name: "organization and governance", link: "org-and-gov" },
+		],
+	},
+	{
+		id: 2,
+		name: "admissions",
+		link: "admissions",
+		dropdown: [
+			{ id: 1, name: "application process", link: "application-process" },
+			{ id: 2, name: "entry requirements", link: "entry-requirements" },
+			{ id: 3, name: "interview details", link: "interview-details" },
+		],
+	},
+	{
+		id: 3,
+		name: "academics",
+		link: "academics",
+		dropdown: [
+			{ id: 1, name: "programmes and courses", link: "programmes-and-courses" },
+			{ id: 2, name: "academic facilities", link: "academic-facilities" },
+			{ id: 3, name: "academic calendar", link: "academic-calendar" },
+		],
+	},
+	{
+		id: 4,
+		name: "student life",
+		link: "student-life",
+		dropdown: [
+			{ id: 1, name: "student leadership", link: "student-leadership" },
+			{ id: 2, name: "life at NMTC, Kumasi", link: "life-at-nmtc" },
+		],
+	},
+	{
+		id: 5,
+		name: "media",
+		link: "media",
+		dropdown: [
+			{ id: 1, name: "News", link: "news" },
+			{ id: 2, name: "Gallery", link: "gallery" },
+		],
+	},
+	{
+		id: 6,
+		name: "useful links",
+		link: "useful-links",
+		// dropdown: [
+		// 	{ id: 1, name: "history and facts", link: "history-and-facts" },
+		// 	{ id: 2, name: "goals and objectives", link: "goals-and-objectives" },
+		// 	{ id: 3, name: "organization and governance", link: "org-and-gov" },
+		// ],
+	},
+	{
+		id: 7,
+		name: "donate",
+		link: "donate",
+	},
 ];
 
 const Navbar = ({ openSideDrawer, bg }) => {
@@ -32,7 +88,12 @@ const Navbar = ({ openSideDrawer, bg }) => {
 						<Link to="/">Home</Link>
 					</li>
 					{links.map((link) => (
-						<NavItem link={link.link} key={link.id} name={link.name} />
+						<NavItem
+							link={link.link}
+							key={link.id}
+							name={link.name}
+							dropdown={link.dropdown}
+						/>
 					))}
 				</ul>
 				<div className="flex items-center justify-center gap-4">
