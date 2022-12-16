@@ -10,6 +10,7 @@ const SideDrawer = ({ open, close }) => {
 			<div className="absolute top-5 right-5" onClick={close}>
 				<TfiClose className="text-2xl" />
 			</div>
+			<nav>Navigation Items go here</nav>
 		</div>
 	);
 };

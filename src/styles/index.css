@@ -21,6 +21,14 @@ body {
 	background-color: grey;
 }
 
+.banner {
+	background-image: url("../assets/images/banner.jpg");
+	background-repeat: no-repeat;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
 .carousel {
 	@apply relative overflow-hidden;
 }

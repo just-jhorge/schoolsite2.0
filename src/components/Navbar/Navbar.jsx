@@ -20,7 +20,7 @@ const links = [
 		name: "admissions",
 		link: "admissions",
 		dropdown: [
-			{ id: 1, name: "application process", link: "application-process" },
+			{ id: 1, name: "application process", link: "admission-process" },
 			{ id: 2, name: "entry requirements", link: "entry-requirements" },
 			{ id: 3, name: "interview details", link: "interview-details" },
 		],
@@ -30,8 +30,8 @@ const links = [
 		name: "academics",
 		link: "academics",
 		dropdown: [
-			{ id: 1, name: "programmes and courses", link: "programmes-and-courses" },
-			{ id: 2, name: "academic facilities", link: "academic-facilities" },
+			{ id: 1, name: "programmes and courses", link: "programmes" },
+			{ id: 2, name: "academic facilities", link: "facilities" },
 			{ id: 3, name: "academic calendar", link: "academic-calendar" },
 		],
 	},
@@ -57,11 +57,6 @@ const links = [
 		id: 6,
 		name: "useful links",
 		link: "useful-links",
-		// dropdown: [
-		// 	{ id: 1, name: "history and facts", link: "history-and-facts" },
-		// 	{ id: 2, name: "goals and objectives", link: "goals-and-objectives" },
-		// 	{ id: 3, name: "organization and governance", link: "org-and-gov" },
-		// ],
 	},
 	{
 		id: 7,
@@ -89,8 +84,8 @@ const Navbar = ({ openSideDrawer, bg }) => {
 					</li>
 					{links.map((link) => (
 						<NavItem
-							link={link.link}
 							key={link.id}
+							link={link.link}
 							name={link.name}
 							dropdown={link.dropdown}
 						/>
