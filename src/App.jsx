@@ -38,6 +38,8 @@ function App() {
 		setOpenSide(false);
 	};
 
+	console.log(openSide);
+
 	return (
 		<main className="relative min-h-screen">
 			<Navbar bg={location.pathname} openSideDrawer={openSideDrawer} />

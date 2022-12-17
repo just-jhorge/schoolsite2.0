@@ -5,21 +5,25 @@ const NavItem = ({ name, link, dropdown }) => {
 	const [openDropdown, setOpenDropdown] = useState(false);
 
 	return (
-		<li className="relative h-full capitalize flex items-center justify-center">
+		<li className="relative h-full capitalize flex flex-col md:flex-row items-start md:items-center justify-center mb-7 md:mb-0">
 			{dropdown ? (
 				<p
-					className="cursor-pointer"
+					className="cursor-pointer text-4xl md:text-base"
 					onClick={() => setOpenDropdown(!openDropdown)}
 				>
 					{name}
 				</p>
 			) : (
-				<Link to={link} onClick={() => setOpenDropdown(false)}>
+				<Link
+					className="text-4xl md:text-base"
+					to={link}
+					onClick={() => setOpenDropdown(false)}
+				>
 					{name}
 				</Link>
 			)}
 			<div
-				className={`absolute flex-col items-start justify-start gap-5 bg-white shadow-lg text-black left-0 top-14 p-5 ${
+				className={`block md:absolute flex-col items-start justify-start gap-2 md:gap-5 bg-white md:shadow-lg text-black left-0 md:top-14 md:p-5 p-2 ${
 					!dropdown && "hidden"
 				} ${openDropdown ? "flex" : "hidden"}`}
 			>
@@ -27,7 +31,9 @@ const NavItem = ({ name, link, dropdown }) => {
 					dropdown.map((dropdownLink) => (
 						<Link
 							key={dropdownLink.id}
-							onClick={() => setOpenDropdown(false)}
+							onClick={() => {
+								setOpenDropdown(false);
+							}}
 							className="whitespace-nowrap hover:text-green-500 transition-colors duration-200"
 							to={`/${link}/${dropdownLink.link}`}
 						>
