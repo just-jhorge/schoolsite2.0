@@ -15,9 +15,9 @@ const Navbar = ({ openSideDrawer, bg }) => {
 			} border-b border-gray-300 transition-all duration-300`}
 		>
 			<div className="px-4 md:px-0 md:container h-full flex items-center justify-between">
-				<div>
+				<Link to="/">
 					<img src={Logo} className="h-12" alt="School Crest" />
-				</div>
+				</Link>
 				<ul className="h-full hidden md:flex items-center justify-center gap-x-10">
 					<li className="h-full center-item cursor-pointer">
 						<Link to="/">Home</Link>

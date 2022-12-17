@@ -1,8 +1,7 @@
-import banner from "../../assets/images/banner.jpg";
-
 const HistoryFacts = () => {
 	return (
-		<div className="flex flex-col items-start justify-start gap-5">
+		<div className="flex flex-col items-start justify-start gap-5 text-sm md:text-base">
+			<h2 className="text-2xl md:text-3xl font-semibold">Histoy &amp; Facts</h2>
 			<p>
 				The college since inception has existed as two colleges running nursing
 				and midwifery programmes under two administrations namely Nurse's
@@ -34,6 +33,11 @@ const HistoryFacts = () => {
 				The College also runs a 2-year Post Nurse Assistant Clinical/Nurse
 				Assistant Preventive (NAC/NAP) certificate in Midwifery programme since
 				September, 2016.
+			</p>
+			<p>
+				<i>
+					MOTO: <q>ENTER TO LEARN AND GO OUT TO SERVE</q>
+				</i>
 			</p>
 		</div>
 	);

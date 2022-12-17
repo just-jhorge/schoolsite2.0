@@ -1,30 +1,30 @@
-import { useState } from "react";
-import { Routes, Route } from "react-router-dom";
-import { useLocation } from "react-router-dom";
-import ScrollToTop from "./utilities/ScrollToTop";
+import ApplicationProcess from "./pages/Admissions/ApplicationProcess";
+import AcademicFacilities from "./pages/Academics/AcademicFacilities";
+import EntryRequirements from "./pages/Admissions/EntryRequirements";
+import ProgrammesCourses from "./pages/Academics/ProgrammesCourses";
+import InterviewDetails from "./pages/Admissions/InterviewDetails";
+import StudentLeadership from "./pages/Students/StudentLeadership";
+import AcademicCalendar from "./pages/Academics/AcademicCalendar";
+import OrganizationGov from "./pages/About/OrganizationGov";
+import GoalsObjectives from "./pages/About/GoalsObjectives";
 import SideDrawer from "./components/Navbar/SideDrawer";
+import Admissions from "./pages/Admissions/Admissions";
+import HistoryFacts from "./pages/About/HistoryFacts";
+import LifeAtNmtc from "./pages/Students/LifeAtNmtc";
+import Academics from "./pages/Academics/Academics";
+import ScrollToTop from "./utilities/ScrollToTop";
+import { Routes, Route } from "react-router-dom";
+import Students from "./pages/Students/Students";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
+import { useLocation } from "react-router-dom";
+import Gallery from "./pages/Media/Gallery";
+import About from "./pages/About/About";
+import Media from "./pages/Media/Media";
+import News from "./pages/Media/News";
 import ToTop from "./utilities/ToTop";
 import Home from "./pages/Home/Home";
-import About from "./pages/About/About";
-import Admissions from "./pages/Admissions/Admissions";
-import Academics from "./pages/Academics/Academics";
-import Media from "./pages/Media/Media";
-import HistoryFacts from "./pages/About/HistoryFacts";
-import GoalsObjectives from "./pages/About/GoalsObjectives";
-import OrganizationGov from "./pages/About/OrganizationGov";
-import InterviewDetails from "./pages/Admissions/InterviewDetails";
-import EntryRequirements from "./pages/Admissions/EntryRequirements";
-import ApplicationProcess from "./pages/Admissions/ApplicationProcess";
-import ProgrammesCourses from "./pages/Academics/ProgrammesCourses";
-import AcademicFacilities from "./pages/Academics/AcademicFacilities";
-import AcademicCalendar from "./pages/Academics/AcademicCalendar";
-import Students from "./pages/Students/Students";
-import StudentLeadership from "./pages/Students/StudentLeadership";
-import LifeAtNmtc from "./pages/Students/LifeAtNmtc";
-import News from "./pages/Media/News";
-import Gallery from "./pages/Media/Gallery";
+import { useState } from "react";
 
 function App() {
 	const location = useLocation();
@@ -37,8 +37,6 @@ function App() {
 	const closeSideDrawer = () => {
 		setOpenSide(false);
 	};
-
-	console.log(openSide);
 
 	return (
 		<main className="relative min-h-screen">

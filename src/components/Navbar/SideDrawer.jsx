@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { TfiClose } from "react-icons/tfi";
+import { TfiClose, TfiAngleDown } from "react-icons/tfi";
 import NavItem from "./NavItem";
 import { links } from "../../data/data";
 
